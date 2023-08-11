@@ -1,0 +1,205 @@
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background: #E8EAE9;
+}
+button{
+	position: absolute;
+	top: 500px;
+	font-size: 2em;
+	color: white;
+	background: green;
+	padding: 10px;
+	font-weight: bold;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0px 8px 20px rgba(255,255,255,0.9); 
+}
+button:hover{
+	cursor: pointer;
+}
+#banner {
+	width: 100%;
+}
+#head{
+	position: fixed;
+}
+header {
+	background-color: black;
+	color: #fff;
+	padding: 0px;
+	text-align: center;
+	width: 100%; 
+} 
+header div h1 {
+	position: absolute;
+	top: 200px;
+	left: 40%;
+	z-index: 1;
+	font-size: 9em;
+}
+.bar{
+	background: green;
+	width: 100%;
+	color: white;
+	font-size: 1.5em;
+	left: 10px;
+}
+ 
+#des{
+	position: relative;
+	margin: 5px auto;
+	width: 80%;
+	font-size: 1.5em;
+	padding: 5px;
+	text-align: left;
+}
+
+#icon {
+	padding: 0;
+	margin: 0;
+	width: 86px;
+	height: 45px;
+	float: left;
+}
+
+nav {
+	background-color: black;
+	width: 100%; 
+}
+
+.navbar {
+	float: right; 
+}
+
+ul.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	
+	display: flex; /* This makes the list items appear horizontally */
+	justify-content: center; /* Centers the navigation links */
+}
+
+ul.navbar li {
+	padding: 10px 20px;
+}
+
+ul.navbar li a {
+	text-decoration: none;
+	color: white;
+}
+
+ul.navbar li a:hover {
+	background-color: #ddd;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap; /* This allows the divs to wrap into multiple rows */
+	justify-content: flex-start;
+}
+.images{
+	width: 80%;
+	border: 5px solid grey;
+	height: 300px;
+}
+.images img {
+	margin: 5px 10%; 
+	width: 80%;
+	border-radius: 10px;
+	height: 100%;
+}
+
+main div h2 {
+	text-align: center;
+	color: green;
+}
+
+main div {
+	width: 30%;
+	margin: 5px auto;
+	border: 1px solid #ccc;
+	display: box;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	background: white;
+	border-radius: 5px;
+}
+/*
+ styles for the footer
+*/
+/* Style for the footer */
+footer {
+	background-color: #010101;
+	padding: 20px;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer-section {
+	width: 30%;
+	margin-bottom: 20px;
+}
+
+.footer-section h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.footer-section p, footer h3 {
+	color: white;
+}
+
+.social-media {
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.social-media li {
+	margin-right: 10px;
+}
+
+.footer-bottom {
+	border-top: 1px solid #ccc;
+	margin-top: 20px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.footer-bottom p {
+	color: #777;
+}
+
+/*
+	styles for a smartphone
+*/
+@media screen and (max-width: 480px) {
+	main div {
+		width: 94%;
+	}
+	header div h1 {
+		position: absolute;
+		top: 100px;
+		left: 30%;
+		z-index: 99;
+		font-size: 3em;
+	}
+	#des{display: none;}
+	.footer-content {
+		display: block;
+	}
+	.footer-section {
+		width: 80%;
+		margin-bottom: 20px;
+	}
+}
